@@ -40,7 +40,7 @@ def plot_audio(audio, sr, title='Audio Waveform'):
     plt.show()
 
 # Plot frequency spectrum with dynamic zoom
-def plot_frequency_spectrum(audio, sr, dominant_freq, zoom_range=100):
+def plot_frequency_spectrum(audio, sr, dominant_freq, zoom_range=200):
     n_fft = 8192
     audio = audio / np.max(np.abs(audio))
     fft_spectrum = np.fft.rfft(audio, n=n_fft)
@@ -56,11 +56,11 @@ def plot_frequency_spectrum(audio, sr, dominant_freq, zoom_range=100):
     plt.show()
 
 # Load the original audio file
-file_path = 'F#_tone.wav'
+file_path = 'D#_tone.wav'
 audio, sr = load_audio(file_path)
 
 # Plot original audio
-plot_audio(audio, sr, title='Original Audio')
+#plot_audio(audio, sr, title='Original Audio')
 
 # Find the dominant frequency in the original audio
 dominant_frequency, freq, magnitude_spectrum = get_dominant_frequency(audio, sr)
