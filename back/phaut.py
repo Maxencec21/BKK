@@ -48,7 +48,7 @@ def save_audio(file_path, audio, sr):
     sf.write(file_path, audio, sr)
 
 # Defining the path
-input_path = 'Re.wav' 
+input_path = 'C.wav' 
 output_path = input_path  
 audio, sr = load_audio(input_path)
 

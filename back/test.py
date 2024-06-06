@@ -12,7 +12,7 @@ def load_audio(file_path):
 
 # Function to get the dominant frequency
 def get_dominant_frequency(audio, sr):
-    n_fft = 8192  # Increase the resolution of the FFT
+    n_fft = 8192  
     audio = audio / np.max(np.abs(audio))
     fft_spectrum = np.fft.rfft(audio, n=n_fft)
     freq = np.fft.rfftfreq(n_fft, d=1./sr)
@@ -23,7 +23,7 @@ def get_dominant_frequency(audio, sr):
 # Function to convert frequency to note name without octave
 def freq_to_note_name(freq):
     A4 = 440.0
-    C0 = A4 * np.power(2, -4.75)  # C0 frequency
+    C0 = A4 * np.power(2, -4.75)  
     half_steps = np.round(12 * np.log2(freq / C0))
     note_names = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
     note_index = int(half_steps) % 12
@@ -56,7 +56,7 @@ def plot_frequency_spectrum(audio, sr, dominant_freq, zoom_range=200):
     plt.show()
 
 # Load the original audio file
-file_path = 'D#_tone.wav'
+file_path = 'Re.wav'
 audio, sr = load_audio(file_path)
 
 # Plot original audio

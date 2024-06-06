@@ -1,0 +1,22 @@
+Chord,Notes
+C_major,C E G
+C_minor,C D# G
+Cmaj7,C E G B
+D_major,D F# A
+D_minor,D F A
+D7,D F# A C
+E_major,E G# B
+E_minor,E G B
+E7,E G# B D
+F_major,F A C
+F_minor,F G# C
+F7,F A C D#
+G_major,G B D
+G_minor,G A# D
+G7,G B D F
+A_major,A C# E
+A_minor,A C E
+A7,A C# E G
+B_major,B D# F#
+B_minor,B D F#
+B7,B D# F# A

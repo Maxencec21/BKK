@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note and Chord Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Note and Chord Detection</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="analysis.html">Analysis</a>
+            <a href="chords.html">Chords</a>
+            <a href="docs.html">Documentation</a>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Your Audio File</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="audio-file" accept="audio/*" required>
+                <button type="submit">Analyze</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Note and Chord Detection</p>
+    </footer>
+</body>
+</html>
